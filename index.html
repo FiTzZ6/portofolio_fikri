@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio | Web Developer</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    <body>
+
+        <nav>
+            <h2 class="logo">Fikri Fitrah Ramadani</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section id="home" class="hero">
+            <div class="hero-content">
+
+                <img src="assets/profile.jpg" alt="Profile" class="profile-img">
+
+                <h1>Hi, I'm <span id="typing"></span></h1>
+
+                <p class="subtitle">
+                    Junior Web Developer | Laravel, PHP & API Development
+                </p>
+
+                <div class="hero-btn">
+                    <button onclick="scrollToSection('projects')">Lihat
+                        Project</button>
+                    <a href="assets/CV.pdf" download class="btn-cv">
+                        Download CV
+                    </a>
+                </div>
+
+                <div class="social">
+                    <a href="https://github.com/FiTzZ6">GitHub</a>
+                    <a
+                        href="https://www.linkedin.com/in/fikri-fitrah-ramadani/">LinkedIn</a>
+                    <a href="https://www.instagram.com/_fixxyyy/">Instagram</a>
+                </div>
+
+                <div class="stats">
+                    <div>
+                        <h3>3+</h3>
+                        <p>Projects</p>
+                    </div>
+                    <div>
+                        <h3>1+</h3>
+                        <p>Experience</p>
+                    </div>
+                    <div>
+                        <h3>100%</h3>
+                        <p>Commitment</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+
+            <div class="about-container">
+
+                <div class="about-text">
+                    <p>
+                        Saya adalah seorang Junior Web Developer yang memiliki
+                        ketertarikan dalam pengembangan aplikasi web menggunakan
+                        Laravel.
+                        Memiliki pengalaman magang selama 3 bulan dan terbiasa
+                        membuat
+                        aplikasi web responsif serta REST API.
+                    </p>
+                </div>
+
+                <div class="about-info">
+
+                    <div class="info-box">
+                        <div class="icon">💼</div>
+                        <h3>Experience</h3>
+                        <p>3 Months Internship</p>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="icon">⚙️</div>
+                        <h3>Focus</h3>
+                        <p>Backend & API</p>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="icon">📍</div>
+                        <h3>Location</h3>
+                        <p>Indonesia</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="skills-slider">
+                <div class="skills-track">
+
+                    <img src="assets/laravel.png" alt>
+                    <img src="assets//php.png" alt>
+                    <img src="assets/mysql.png" alt>
+                    <img src="assets/js.png" alt>
+                    <img src="assets/python.png" alt>
+                    <img src="assets/html.png" alt>
+                    <img src="assets/css.png" alt>
+
+                    <img src="assets/laravel.png" alt>
+                    <img src="assets/php.png" alt>
+                    <img src="assets/mysql.png" alt>
+                    <img src="assets/js.png" alt>
+                    <img src="assets/python.png" alt>
+                    <img src="assets/html.png" alt>
+                    <img src="assets/css.png" alt>
+
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <div class="project-container">
+
+                <div class="card featured">
+
+                    <div class="badge">Featured</div>
+
+                    <div class="card-img">
+                        <img src="assets/project4.png" alt>
+                    </div>
+
+                    <div class="card-content">
+                        <h3>🚀 DRI Platform</h3>
+                        <p>
+                            Platform manajemen identitas digital untuk publikasi
+                            jurnal dan riset.
+                            Mendukung registrasi instan, analitik real-time, dan
+                            keamanan enkripsi.
+                        </p>
+
+                        <div class="tech">
+                            <span>Laravel</span>
+                            <span>API</span>
+                            <span>MySQL</span>
+                        </div>
+
+                        <div class="card-btn">
+                            <a href="#">GitHub</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="badge">Featured</div>
+                    <div class="card-img">
+                        <img src="assets/project1.png" alt>
+                    </div>
+
+                    <div class="card-content">
+                        <h3>🛒 E-Commerce Website</h3>
+                        <p>Website toko sepatu dengan sistem login, checkout,
+                            dan pembayaran.</p>
+
+                        <div class="tech">
+                            <span>Laravel</span>
+                            <span>API</span>
+                            <span>javaScript</span>
+                            <span>MySQL</span>
+                        </div>
+                        <br><br>
+                        <div class="card-btn">
+                            <a
+                                href="https://github.com/FiTzZ6/aja_nyeker">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="badge">Featured</div>
+                    <div class="card-img">
+                        <img src="assets/project2.png" alt>
+                    </div>
+
+                    <div class="card-content">
+                        <h3>🍜 Aplikasi Resep AI</h3>
+                        <p>Mencari resep berdasarkan gambar bahan makanan.</p>
+
+                        <div class="tech">
+                            <span>Laravel</span>
+                            <span>API</span>
+                            <span>Vue</span>
+                            <span>MySQL</span>
+                        </div>
+                        <br><br>
+                        <div class="card-btn">
+                            <a href="#">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="badge">Featured</div>
+                    <div class="card-img">
+                        <img src="assets/project3.png" alt>
+                    </div>
+
+                    <div class="card-content">
+                        <h3>📊 Admin Dashboard</h3>
+                        <p>Dashboard dengan chart dan manajemen data.</p>
+
+                        <div class="tech">
+                            <span>Laravel</span>
+                            <span>API</span>
+                            <span>javaScript</span>
+                            <span>MySQL</span>
+                        </div>
+                        <br><br>
+                        <div class="card-btn">
+                            <a href="#">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+
+            <p class="contact-desc">
+                Tertarik bekerja sama atau punya pertanyaan?
+                Silakan hubungi saya melalui kontak di bawah ini.
+            </p>
+
+            <div class="contact-container">
+
+                <div class="contact-card">
+                    <h3>📧 Email</h3>
+                    <p>fikriramdan666@gmail.com</p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>💼 LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/fikri-fitrah-ramadani/"
+                        target="_blank">linkedin.com/in/fikri-fitrah-ramadani</a>
+                </div>
+
+                <div class="contact-card">
+                    <h3>💻 GitHub</h3>
+                    <a href="https://github.com/FiTzZ6"
+                        target="_blank">github.com/FiTzZ6</a>
+                </div>
+
+            </div>
+            <div class="contact-actions">
+
+                <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=fikriramdan666@gmail.com&su=Kerjasama%20Project&body=Halo,%20saya%20tertarik%20dengan%20portfolio%20Anda."
+                    target="_blank"
+                    class="contact-btn">
+                    📧 Kirim Email
+                </a>
+
+                <a
+                    href="https://wa.me/6285814814155?text=Halo,%20saya%20tertarik%20dengan%20portfolio%20Anda"
+                    target="_blank"
+                    class="wa-btn">
+                    💬 Chat WhatsApp
+                </a>
+
+            </div>
+        </section>
+
+        <footer>
+            <p>© Fikri Fitrah Ramadani Portfolio</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
