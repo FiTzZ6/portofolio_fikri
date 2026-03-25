@@ -469,8 +469,127 @@ section h2::after{
 }
 
 @media(max-width:768px){
-    .profile-img{
-        width:180px;
-        height:180px;
+
+    /* NAVBAR */
+    nav{
+        flex-direction:column;
+        align-items:center;
+        padding:15px;
     }
+
+    nav ul{
+        flex-direction:column;
+        gap:10px;
+        margin-top:10px;
+    }
+
+    /* HERO */
+    .hero{
+        height:auto;
+        padding:60px 20px;
+    }
+
+    .hero h1{
+        font-size:24px;
+    }
+
+    .subtitle{
+        font-size:14px;
+    }
+
+    /* BUTTON */
+    .hero-btn{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .hero-btn button,
+    .btn-cv{
+        width:100%;
+        text-align:center;
+    }
+
+    /* PROFILE */
+    .profile-img{
+        width:150px;
+        height:150px;
+    }
+
+    /* STATS */
+    .stats{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    /* ABOUT */
+    #about{
+        padding:60px 20px;
+    }
+
+    .about-text{
+        font-size:14px;
+    }
+
+    /* INFO BOX */
+    .about-info{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .info-box{
+        width:100%;
+        max-width:250px;
+    }
+
+    /* SKILLS */
+    .skills-track img{
+        width:40px;
+        height:40px;
+    }
+
+    /* PROJECT */
+    #projects{
+        padding:60px 20px;
+    }
+
+    .project-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card{
+        width:100%;
+        max-width:320px;
+    }
+
+    .card-img img{
+        height:150px;
+    }
+
+    /* CONTACT */
+    #contact{
+        padding:60px 20px;
+    }
+
+    .contact-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .contact-card{
+        width:100%;
+        max-width:300px;
+    }
+
+    .contact-actions{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .contact-btn,
+    .wa-btn{
+        width:100%;
+        text-align:center;
+    }
+
 }
