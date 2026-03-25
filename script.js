@@ -34,3 +34,20 @@ function type() {
 }
 
 type();
+
+let lastScroll = 0;
+const navbar = document.querySelector("nav");
+
+window.addEventListener("scroll", () => {
+    let currentScroll = window.pageYOffset;
+
+    if (currentScroll > lastScroll) {
+        // scroll ke bawah → hide navbar
+        navbar.style.top = "-80px";
+    } else {
+        // scroll ke atas → tampilkan navbar
+        navbar.style.top = "0";
+    }
+
+    lastScroll = currentScroll;
+});

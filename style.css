@@ -16,8 +16,13 @@ nav{
     justify-content:space-between;
     padding:20px 50px;
     background:#020617;
-    position:sticky;
+    
+    position:fixed; /* UBAH dari sticky ke fixed */
     top:0;
+    width:100%;
+    z-index:1000;
+
+    transition:top 0.3s;
 }
 
 .logo{
