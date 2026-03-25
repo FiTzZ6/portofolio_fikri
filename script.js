@@ -1,33 +1,55 @@
+
 function scrollToSection(id){
-    document.getElementById(id).scrollIntoView({
-        behavior: 'smooth'
+    const element = document.getElementById(id);
+    if(element){
+        element.scrollIntoView({
+            behavior: "smooth"
+        });
+    }
+}
+
+const toggle = document.getElementById("menu-toggle");
+const menu = document.getElementById("menu");
+
+if(toggle && menu){
+    toggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+    });
+
+    document.querySelectorAll("#menu a").forEach(link => {
+        link.addEventListener("click", () => {
+            menu.classList.remove("active");
+        });
     });
 }
 
-const text = ["Web Developer", "Laravel Developer", "Backend Developer"];
+const textList = ["Web Developer", "Laravel Developer", "Backend Developer"];
 let i = 0;
 let j = 0;
 let currentText = "";
 let isDeleting = false;
 
-function type() {
-    currentText = text[i];
+function type(){
+    const typingElement = document.getElementById("typing");
+    if(!typingElement) return;
 
-    if (isDeleting) {
-        document.getElementById("typing").textContent = currentText.substring(0, j--);
+    currentText = textList[i];
+
+    if(isDeleting){
+        typingElement.textContent = currentText.substring(0, j--);
     } else {
-        document.getElementById("typing").textContent = currentText.substring(0, j++);
+        typingElement.textContent = currentText.substring(0, j++);
     }
 
-    if (!isDeleting && j === currentText.length) {
+    if(!isDeleting && j === currentText.length){
         isDeleting = true;
         setTimeout(type, 1000);
         return;
     }
 
-    if (isDeleting && j === 0) {
+    if(isDeleting && j === 0){
         isDeleting = false;
-        i = (i + 1) % text.length;
+        i = (i + 1) % textList.length;
     }
 
     setTimeout(type, isDeleting ? 50 : 100);
@@ -39,13 +61,17 @@ let lastScroll = 0;
 const navbar = document.querySelector("nav");
 
 window.addEventListener("scroll", () => {
-    let currentScroll = window.pageYOffset;
+    if(!navbar) return;
 
-    if (currentScroll > lastScroll) {
-        // scroll ke bawah → hide navbar
+    let currentScroll = window.pageYOffset;
+    if(currentScroll <= 0){
+        navbar.style.top = "0";
+        return;
+    }
+
+    if(currentScroll > lastScroll){
         navbar.style.top = "-80px";
     } else {
-        // scroll ke atas → tampilkan navbar
         navbar.style.top = "0";
     }
 
