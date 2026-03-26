@@ -157,6 +157,85 @@ nav ul li a {
     text-align: center;
 }
 
+.about-text{
+    max-width:700px;
+    text-align:center; /* ini penting */
+    line-height:1.7;
+}
+
+.about-text p{
+    margin-bottom:15px;
+    color:#cbd5e1;
+}
+
+.certificate-card img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:15px;
+    transition:0.3s;
+}
+
+.certificate-card img:hover{
+    transform:scale(1.05);
+}
+
+/* GRID */
+.certificate-container{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.certificate-card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:15px;
+    width:300px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.certificate-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 30px rgba(56,189,248,0.2);
+}
+
+.certificate-card img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:15px;
+    transition:0.3s;
+}
+
+.certificate-card img:hover{
+    transform:scale(1.05);
+}
+
+/* GRID */
+.certificate-container{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.certificate-card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:15px;
+    width:300px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.certificate-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 30px rgba(56,189,248,0.2);
+}
+
 .skills span {
     display: inline-block;
     margin: 10px;
